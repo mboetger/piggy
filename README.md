@@ -20,7 +20,15 @@ The platform is split into several interconnected services:
 
 ## Getting Started
 
-To spin up the entire ecosystem, simply use Docker Compose:
+To spin up the entire ecosystem, simply use Docker Compose. First, create a `.env` file at the root of the project with your database credentials:
+
+```bash
+POSTGRES_USER=piggy
+POSTGRES_PASSWORD=piggy_password
+POSTGRES_DB=piggy_db
+```
+
+Then, start the ecosystem:
 
 ```bash
 # Build the images and start the services
